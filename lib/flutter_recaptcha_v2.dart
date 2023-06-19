@@ -2,7 +2,6 @@ library flutter_recaptcha_v2;
 
 import 'dart:convert';
 
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:webview_flutter/webview_flutter.dart';
@@ -81,8 +80,7 @@ class _RecaptchaV2State extends State<RecaptchaV2> {
       params = const PlatformWebViewControllerCreationParams();
     }
 
-    final WebViewController webControll =
-        WebViewController.fromPlatformCreationParams(params);
+    final WebViewController webControll = WebViewController.fromPlatformCreationParams(params);
 
     webControll
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
